@@ -1,0 +1,16 @@
+input {
+    background-color: #BEFBFF;
+    border: none;
+    box-shadow: 5px 5px 15px #324B4F;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    height: 35px;
+    margin: 20px 0;
+    outline: none;
+    padding: 0 5px;
+    width: 50%;
+}
+input::placeholder {
+    color: #324B4F;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap');
+form {
+    align-items: center;
+    background-color: #71C885;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    width: 75%;
+}
+
+button {
+    background-color: rgba(176,226,121, 0.5);
+    border: none;
+    box-shadow: 5px 5px 15px #324B4F;
+    color: #324B4F;
+    font-family: 'londrina solid', sans-serif;
+    font-size: 1.5em;
+    height: 10%;
+    margin-top: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        padding: 5px;
+    }
+}

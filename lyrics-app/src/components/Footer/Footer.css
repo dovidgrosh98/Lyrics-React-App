@@ -1,0 +1,23 @@
+footer {
+    align-items: center;
+    background-color: #2A6A73;
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    width: 100%;
+}
+
+a img {
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #324B4F;
+    height: 50px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        font-size: .65em;
+        font-weight: 800;
+    }
+}
