@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 import Axios from 'axios'
-import { BarLoader } from 'react-spinners';
 import Header from '../Header/'
 import InputField from '../InputField/'
 import Results from '../Results'
