@@ -1,9 +1,12 @@
 # Lyrics-React-App
+## Live Preview
+[lyrics-react-app.surge.sh](http://lyrics-react-app.surge.sh)
 
+## MVP
+* fill in inputs
+* submit after filling in form
+* retrieve lyrics/song preview
 
-
-
-## [App](http://lyrics-react-app.surge.sh)
 
 ### deployment tests:
 deployment test 1: [link](http://dg-p2-test1.surge.sh)
