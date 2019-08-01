@@ -1,29 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .results {
     align-items: center;
     background-color: #70c885;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #324B4F;
     display: flex;
     flex-direction: column;
     min-height: 70%;
     padding: 25px;
     width: 70%;
-}
-
-h2 {
-    color: #F9F871;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #2A6A73;
-    font-family: 'chelsea market', sans-serif;
-    font-size: 1.35em;
-}
-
-
-
-@media screen and (max-width: 375px) {
-    p {
-        font-size: .8em;
-    }
 }
