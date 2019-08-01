@@ -14,7 +14,7 @@ class Home extends React.Component {
             artistValue: '',
             songValue: '',
             artistName: '',
-            songTitle: 'unknown',
+            songTitle: '',
             iTunes: [],
         }
     }
@@ -37,8 +37,9 @@ class Home extends React.Component {
     }
 
     getAlbum = async () => {
+        let corsProxy = "https://cors-anywhere.herokuapp.com/";
         const url = `https://itunes.apple.com/search?term=${this.state.songTitle}`
-        const data = await Axios.get(url)
+        const data = await Axios.get(corsProxy + url)
         const { data: { results } } = data
         await this.setState({ iTunes: results })
     }
@@ -73,17 +74,23 @@ class Home extends React.Component {
                                 handleChange={this.handleChange}
                                 artistValue={this.state.artistValue}
                                 songValue={this.state.songValue}
-                            />} />
+                            />}
+                        />
                         <Route path='/results' render={() =>
                             <Results
                                 artist={this.state.artistName}
                                 song={this.state.songTitle}
                                 lyrics={this.state.lyrics}
                                 iTunes={this.state.iTunes}
-                            />} />
+                            />}
+                        />
                     </Switch>
                 </main>
-                <Footer artist={this.state.artistName} song={this.state.songTitle} lyrics={this.state.lyrics} />
+                <Footer
+                    artist={this.state.artistName}
+                    song={this.state.songTitle}
+                    lyrics={this.state.lyrics}
+                />
             </div>
         )
     }
