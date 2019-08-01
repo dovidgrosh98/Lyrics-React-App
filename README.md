@@ -7,6 +7,11 @@
 * submit after filling in form
 * retrieve lyrics/song preview
 
+## To-Do List
+* get lyrics/song preview from api
+* get input value from form
+*
+
 
 ### deployment tests:
 deployment test 1: [link](http://dg-p2-test1.surge.sh)
