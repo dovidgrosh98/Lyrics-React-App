@@ -3,7 +3,7 @@
 
 
 
-## [App](lyrics-react-app.surge.sh)
+## [App](http://lyrics-react-app.surge.sh)
 
 ### deployment tests:
 deployment test 1: [link](dg-p2-test1.surge.sh)
