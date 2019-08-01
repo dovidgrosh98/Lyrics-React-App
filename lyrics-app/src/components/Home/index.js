@@ -16,6 +16,7 @@ class Home extends React.Component {
             artistName: '',
             songTitle: '',
             iTunes: [],
+            loading: false
         }
     }
 
@@ -37,7 +38,7 @@ class Home extends React.Component {
     }
 
     getAlbum = async () => {
-        let corsProxy = "https://cors-anywhere.herokuapp.com/";
+        let corsProxy = 'https://cors-anywhere.herokuapp.com/';
         const url = `https://itunes.apple.com/search?term=${this.state.songTitle}`
         const data = await Axios.get(corsProxy + url)
         const { data: { results } } = data
@@ -57,8 +58,10 @@ class Home extends React.Component {
             artistValue: '',
             songValue: ''
         })
+        await this.setState({ loading: true })
         await this.getAlbum()
         await this.getLyrics()
+        await this.setState({ loading: false })
         this.props.history.push('/results')
     }
 

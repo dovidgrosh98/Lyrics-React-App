@@ -1,0 +1,11 @@
+audio {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    audio {
+        width: 225px;
+        height: 35px;
+    }
+}
+
