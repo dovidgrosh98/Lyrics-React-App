@@ -13,7 +13,6 @@ const InputField = (props) => {
                 {!props.loading ?
                 'Get Lyrics' :
                 <CircleLoader
-                    sizeUnit={"px"}
                     size={15}
                     color={'#F9F871'}
                     loading={props.loading}
