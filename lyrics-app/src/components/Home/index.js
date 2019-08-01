@@ -14,12 +14,13 @@ class Home extends React.Component {
             artistValue: '',
             songValue: '',
             artistName: '',
-            songTitle: '',
-            value: ''
+            songTitle: 'unknown',
+            iTunes: [],
         }
     }
 
     componentDidMount() {
+        this.getAlbum()
         this.getLyrics()
     }
 
@@ -35,19 +36,17 @@ class Home extends React.Component {
         }
     }
 
-    // getAlbum = async () => {
-    //     const apiKey = process.env.REACT_APP_API_KEY
-    //     const url = `theaudiodb.com/api/v1/json/${apiKey}/search.php?s=${this.state.artistName}`
-    //     try {
-    //         const data = await Axios.get(url)
-    //         console.log(data)
-    //         // const { data: { lyrics } } = data
-    //         // await this.setState({ lyrics })
-    //     }
-    //     catch (error) {
-    //         this.setState({ lyrics: 'No Lyrics Found' })
-    //     }
-    // }
+    getAlbum = async () => {
+        const url = `https://itunes.apple.com/search?term=${this.state.songTitle}`
+        try {
+            const data = await Axios.get(url)
+            const { data: { results } } = data
+            await this.setState({iTunes: results})
+        }
+        catch (error) {
+
+        }
+    }
 
     handleChange = (evt) => {
         const { name, value } = evt.target
@@ -62,7 +61,7 @@ class Home extends React.Component {
             artistValue: '',
             songValue: ''
         })
-        // await this.getAlbum()
+        await this.getAlbum()
         await this.getLyrics()
         this.props.history.push('/results')
     }
@@ -85,6 +84,7 @@ class Home extends React.Component {
                                 artist={this.state.artistName}
                                 song={this.state.songTitle}
                                 lyrics={this.state.lyrics}
+                                iTunes={this.state.iTunes}
                             />} />
                     </Switch>
                 </main>
