@@ -1,6 +1,5 @@
 # Lyrics-React-App
 
-
 ### deployment tests:
 deployment test 1: [link](dg-p2-test1.surge.sh)
 
