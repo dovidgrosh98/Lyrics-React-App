@@ -10,29 +10,3 @@
     padding: 25px;
     width: 70%;
 }
-
-h2 {
-    color: #F9F871;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #324B4F;
-    font-family: 'roboto', sans-serif;
-    font-size: 1.35em;
-    font-weight: 600;
-    word-spacing: 10px;
-    line-height: 30px;
-    text-align: justify;
-}
-
-
-
-@media screen and (max-width: 375px) {
-    p {
-        font-size: .8em;
-        font-weight: 600;
-        word-spacing: 0;
-        line-height: 20px;
-    }
-}

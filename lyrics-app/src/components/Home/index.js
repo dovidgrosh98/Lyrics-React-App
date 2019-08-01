@@ -38,14 +38,9 @@ class Home extends React.Component {
 
     getAlbum = async () => {
         const url = `https://itunes.apple.com/search?term=${this.state.songTitle}`
-        try {
-            const data = await Axios.get(url)
-            const { data: { results } } = data
-            await this.setState({iTunes: results})
-        }
-        catch (error) {
-
-        }
+        const data = await Axios.get(url)
+        const { data: { results } } = data
+        await this.setState({ iTunes: results })
     }
 
     handleChange = (evt) => {
@@ -79,7 +74,7 @@ class Home extends React.Component {
                                 artistValue={this.state.artistValue}
                                 songValue={this.state.songValue}
                             />} />
-                        <Route path='/results' component={() =>
+                        <Route path='/results' render={() =>
                             <Results
                                 artist={this.state.artistName}
                                 song={this.state.songTitle}
@@ -88,7 +83,7 @@ class Home extends React.Component {
                             />} />
                     </Switch>
                 </main>
-                <Footer artist={this.state.artistName} song={this.state.songTitle} lyrics={this.state.lyrics}/>
+                <Footer artist={this.state.artistName} song={this.state.songTitle} lyrics={this.state.lyrics} />
             </div>
         )
     }
