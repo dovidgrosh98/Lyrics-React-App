@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 import Axios from 'axios'
+import { BarLoader } from 'react-spinners';
 import Header from '../Header/'
 import InputField from '../InputField/'
 import Results from '../Results'
@@ -77,6 +78,7 @@ class Home extends React.Component {
                                 handleChange={this.handleChange}
                                 artistValue={this.state.artistValue}
                                 songValue={this.state.songValue}
+                                loading={this.state.loading}
                             />}
                         />
                         <Route path='/results' render={() =>
