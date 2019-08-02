@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <h1>Lyrics React App</h1>
+            <h1>Lyrics React</h1>
         </header>
     );
 };
