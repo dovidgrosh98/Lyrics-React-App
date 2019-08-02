@@ -29,3 +29,5 @@ solved by setting local storage
 2. iTunes
 
 ## ![](https://res.cloudinary.com/dg98/image/upload/c_limit,w_596/v1564714215/Screen_Shot_2019-08-01_at_10.24.10_PM.png)
+
+## ![](https://res.cloudinary.com/dg98/image/upload/c_limit,w_569/v1564751216/Screen_Shot_2019-08-02_at_9.06.03_AM.png)
