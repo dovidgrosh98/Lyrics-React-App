@@ -14,8 +14,10 @@
 
 ## issues
 * <del>route from submit happens occurs before fetching data from api</del>
+
 solved with pushing to results route after fetching data, as appose to wrapping submit button with Link tags 
 ```this.props.history.push('/results')```
 
 * <del>can't store data once page is refreshed</del>
+
 solved by setting local storage
