@@ -28,8 +28,8 @@ solved by setting local storage
 1. lyrics.ovh
 2. iTunes
 
-### Desktop
-## ![](https://res.cloudinary.com/dg98/image/upload/c_limit,w_681/v1564751398/Screen_Shot_2019-08-02_at_9.08.49_AM.png)
-
 ### Mobile
 ## ![](https://res.cloudinary.com/dg98/image/upload/c_limit,w_569/v1564751216/Screen_Shot_2019-08-02_at_9.06.03_AM.png)
+
+### Desktop
+## ![](https://res.cloudinary.com/dg98/image/upload/c_limit,w_681/v1564751398/Screen_Shot_2019-08-02_at_9.08.49_AM.png)
