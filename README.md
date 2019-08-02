@@ -1,10 +1,12 @@
 # Lyrics-React-App
 ## Live Preview
 [lyrics-react-app.surge.sh](http://lyrics-react-app.surge.sh)
+
 ## MVP
 * get input value and call api
 * pass data/input value as props through the route
 * get lyrics to appear
+* have button to route back to search again
 
 ## Extra Features
 * add itunes api
@@ -21,3 +23,9 @@ solved with pushing to results route after fetching data, as appose to wrapping 
 * <del>can't store data once page is refreshed</del>
 
 solved by setting local storage
+
+## Apis
+1. lyrics.ovh
+2. iTunes
+
+## ![]()
