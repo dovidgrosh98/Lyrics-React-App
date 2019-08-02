@@ -1,5 +1,5 @@
-import React from 'react'
-import './ArtistAndSong.css'
+import React from 'react';
+import './ArtistAndSong.css';
 
 const ArtistAndSong = (props) => {
     return (
@@ -11,7 +11,7 @@ const ArtistAndSong = (props) => {
             }
             <h2>{props.artist.toUpperCase()} - {props.song.toUpperCase()}</h2>
         </div>
-    )
-}
+    );
+};
 
-export default ArtistAndSong
+export default ArtistAndSong;
