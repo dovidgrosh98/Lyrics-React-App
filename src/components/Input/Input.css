@@ -16,3 +16,9 @@ input {
 input::placeholder {
     color: #324B4F;
 }
+
+@media screen and (max-width: 375px) {
+    input {
+        font-size: 1em;
+    }
+}
