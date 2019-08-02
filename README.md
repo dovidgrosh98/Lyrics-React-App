@@ -15,7 +15,7 @@
 * add youtube search in case apis don't have the input value
 
 ## issues
-* <del>route from submit happens occurs before fetching data from api</del>
+* <del>route from submit occurs before fetching data from api</del>
 
 solved with pushing to results route after fetching data, as appose to wrapping submit button with Link tags 
 ```this.props.history.push('/results')```
