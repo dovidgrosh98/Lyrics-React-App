@@ -1,4 +1,4 @@
-# Lyrics-React-App
+# Lyrics React App
 ## Live Preview
 [lyrics-react-app.surge.sh](http://lyrics-react-app.surge.sh)
 
