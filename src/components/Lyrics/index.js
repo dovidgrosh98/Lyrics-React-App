@@ -1,5 +1,5 @@
-import React from 'react'
-import './Lyrics.css'
+import React from 'react';
+import './Lyrics.css';
 
 const Lyrics = (props) => {
     return (
@@ -10,7 +10,7 @@ const Lyrics = (props) => {
                 <p>No Lyrics Found</p>
             }
         </div>
-    )
-}
+    );
+};
 
-export default Lyrics
+export default Lyrics;
