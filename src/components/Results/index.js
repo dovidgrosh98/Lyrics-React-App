@@ -30,6 +30,7 @@ const Results = (props) => {
     const song = localStorage.getItem('song');
     const lyrics = localStorage.getItem('lyrics');
 
+
     return (
         <div className="results">
             <ArtistAndSong iTunes={songPreview} artist={artist} song={song} />

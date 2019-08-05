@@ -93,7 +93,6 @@ class Home extends React.Component {
                 <Footer
                     artist={this.state.artistName}
                     song={this.state.songTitle}
-                    lyrics={this.state.lyrics}
                 />
             </div>
         );

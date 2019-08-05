@@ -5,7 +5,11 @@ const Lyrics = (props) => {
     return (
         <div id="lyrics">
             {props.lyrics ?
-                <p>{props.lyrics}</p>
+                <ul>{
+                    props.lyrics.split('\n').map((line, index) => {
+                        return <li key={index}>{line}</li>;
+                    })};
+                </ul>
                 :
                 <p>No Lyrics Found</p>
             }
