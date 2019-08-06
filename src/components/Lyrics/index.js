@@ -8,7 +8,7 @@ const Lyrics = (props) => {
                 <ul>{
                     props.lyrics.split('\n').map((line, index) => {
                         return <li key={index}>{line}</li>;
-                    })};
+                    })}
                 </ul>
                 :
                 <p>No Lyrics Found</p>
